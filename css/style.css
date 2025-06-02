@@ -1,0 +1,531 @@
+/*--- reset ----*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*!------HEADER------*/
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(220, 221, 215);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+
+
+nav ul {
+
+    display: flex;
+    justify-content: space-evenly;
+    float: right;
+    margin-bottom: 15px;
+
+
+}
+
+nav ul li {
+    /*especifico a sacar puntos */
+    text-decoration: none;
+    background-color: rgb(179, 189, 142);
+    display: inline-block;
+    /* posicionamiento en linea*/
+    padding: 3px;
+    margin-inline: 5px;
+    border: 1px solid rgb(7, 7, 7);
+    border-bottom: none;
+    border-radius: 0 5px 0 10px;
+    /*tiempo de transicion pseudoclase*/
+    transition: 1s;
+    margin-top: 0.5px;
+
+}
+
+/*al pasar mouse*/
+nav ul li:hover {
+
+    background-color: rgb(199, 238, 121);
+    border-color: aqua;
+}
+
+/*propiedad para clickear*/
+nav ul li:active {
+    background-color: blue;
+
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    /* separacion*/
+
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    width: 50%;
+    background-color: rgb(95, 166, 247);
+    text-transform: capitalize;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: rgb(218, 250, 182);
+
+}
+
+h1::first-letter {
+    font-size: 40px;
+    color: rgb(252, 226, 226);
+
+}
+
+
+/*?--------MAIN------ */
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    text-size-adjust: 30px;
+    padding-top: 5px;
+}
+
+
+.seccion-donar {
+    height: 80px;
+    height: 60px;
+    background-color: rgb(72, 209, 54);
+    border: 3px solid rgb(177, 15, 15);
+    border-radius: 20px;
+    padding: 5px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1;
+
+}
+
+.seccion-donar p {
+    font-size: 15px;
+    text-decoration-style: dotted;
+    text-transform: uppercase;
+    margin-top: 5px;
+    color: rgb(116, 23, 7);
+
+
+}
+
+.seccion-donar a {
+
+    background-color: rgb(193, 247, 69);
+    text-decoration: none;
+    color: brown;
+    font-size: 15px;
+    padding: 1px 3px px 3px;
+    border-radius: 10px;
+    border: 1px dotted brown;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+
+
+
+}
+
+.central {
+
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-img-central {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section div img {
+
+    border: 5px solid rgba(0, 0, 0, 0.233);
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 150px;
+
+}
+
+.phistoria {
+
+    margin-top: 40px;
+    color: rgb(53, 42, 42);
+    text-align: center;
+    height: 500px;
+    background-image: url(../img/logo\ refugio.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+main section p {
+
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedor1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 200px 200px 200px;*/
+    gap: 10px;
+    grid-auto-rows: 200px;
+    border: 1px solid black;
+
+
+
+}
+
+.cuidado {
+    text-align: center;
+    font-size: 10px;
+
+
+}
+
+.cuidado h5 {
+
+    text-align: center;
+    background-color: rgba(153, 201, 243, 0.384);
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.consejos h5 {
+
+    background-color: rgba(167, 213, 253, 0.384);
+}
+
+.consejos {
+
+    grid-row: span 2;
+    text-align: center;
+
+
+
+}
+
+.contenedor-logo {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 1fr;
+    width: 300px;
+    height: 300px;
+    opacity: 50%;
+
+
+}
+
+.contenedores {
+    border: 2px solid rgb(125, 224, 100);
+    background-color: rgb(160, 88, 228);
+
+}
+
+.adoptar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* activa modo flex*/
+    justify-content: space-evenly;
+    /*distibuye en eje x*/
+    align-items: center;
+    /* distribuye eje contrario*/
+    /*flex-direction: column; en columna */
+    background-color: rgba(125, 224, 86, 0.5)
+}
+
+
+
+.adoptar div {
+    border: 1px solid gray;
+    width: 250px;
+    height: 400px;
+    margin: 5px;
+    text-align: center;
+    background-color: rgba(211, 243, 147, 0.829);
+
+}
+
+.adoptar div h3 {
+    margin-bottom: 2px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.adoptar div p {
+
+    padding-bottom: 10px;
+    font-size: 10px;
+
+}
+
+.adoptar div a {
+
+    background-color: rgba(230, 100, 83, 0.671);
+    border: 3px solid rgba(23, 29, 11, 0.377);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: auto;
+    transition: 1s;
+}
+
+.adoptar div a:hover {
+
+    background-color: aqua;
+
+}
+
+.adoptar div img {
+    /*width: 150px;
+    height: 150px;*/
+    width: 100%;
+    height: 180px;
+
+}
+
+.videos {
+
+    width: 100%;
+    height: 350px;
+}
+
+.videosdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+
+}
+
+.videos-you {
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+
+
+
+.mapa {
+
+    margin-block: 1%;
+    margin-left: 30%;
+
+
+}
+
+/**--------FOOTER------*/
+
+.dr {
+    color: crimson;
+    text-align: center;
+}
+
+.logo {
+
+    margin-left: 23%;
+}
+
+
+
+form {
+
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    padding-left: 50px;
+    margin-top: 10px;
+    align-items: center;
+    background-image: url(../img/logo\ refugio.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+
+}
+
+.seleccionar-mascota {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+
+}
+
+form h2 {
+
+    width: 80%;
+    border: 2px solid rgb(235, 13, 13);
+    border-radius: 10px;
+    margin: auto;
+    background-color: rgba(143, 133, 119, 0.747);
+}
+
+form label {
+
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 5%;
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 0, 0);
+    background-color: grey;
+}
+
+form input {
+
+    border: none;
+    border-bottom: 1px solid rgba(58, 87, 14, 0.582);
+    background: transparent;
+    width: 50%;
+    background-color: rgba(128, 117, 117, 0.226);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+
+
+fieldset {
+    color: rgb(226, 88, 88);
+    border: 3px solid rgba(160, 156, 156, 0.411);
+    width: 90%;
+    height: auto;
+}
+
+footer {
+
+    width: 100%;
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+}
+
+footer p {
+
+    text-transform: uppercase;
+    padding: 5px;
+    background-color: rgb(236, 199, 199);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border: 1px;
+    text-decoration: overline;
+    margin-top: 2px;
+}
+
+footer img {
+
+    width: 35px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 836px) {
+    header {
+        flex-direction: column;
+        background-color: rgb(218, 250, 182);
+    }
+}
+
+@media screen and (max-width: 699px) {
+
+    header {
+
+        margin-bottom: 50px;
+        background-color: rgb(218, 250, 182)
+    }
+}
+
+@media screen and (max-width: 699px) {
+
+    header nav {
+        background-color: rgb(218, 250, 182)
+    }
+}
+
+
+@media screen and (max-width: 699px) {
+
+    .phistoria {
+        height: 1020px;
+    }
+}
+
+@media screen and (max-width: 477px) {
+    ul {
+        display: flex;
+        justify-content: left;
+        float: left;
+        margin-bottom: 1px;
+        font-size: 10px;
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .adoptar {
+        flex-direction: column;
+
+    }
+
+}
+
+@media screen and (max-width: 805px) {
+    .contenedor1 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 805px) {
+
+    .consejos iframe {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 699px) {
+
+    .videos-you {
+        width: 230px;
+        height: 115px;
+        flex-direction: column;
+
+
+    }
+
+}
