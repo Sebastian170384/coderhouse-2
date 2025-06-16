@@ -345,9 +345,9 @@ main section p {
 .adoptar div a {
 
     background-color: rgba(230, 100, 83, 0.671);
-    border: 3px solid rgba(23, 29, 11, 0.377);
+    padding: 5px;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     text-decoration: none;
     padding: auto;
     transition: 1s;
