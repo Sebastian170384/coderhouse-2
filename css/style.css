@@ -28,10 +28,8 @@ header {
 
 .bg-body-tertiary img {
 
-    width: 60px;
-    height: 60px;
-
-
+    width: 70px;
+    height: 70px;
 }
 
 .bg-body-tertiary {
@@ -40,66 +38,16 @@ header {
 
 }
 
+.navbar-toggler {
 
-
-
-
-nav ul {
-
-    display: flex;
-    justify-content: space-evenly;
-    float: right;
-    margin-bottom: 15px;
-
-
-}
-
-nav ul li {
-    /*especifico a sacar puntos */
-    text-decoration: none;
-    background-color: rgb(252, 252, 250);
-    display: inline-block;
-    /* posicionamiento en linea*/
-    padding: 3px;
-    margin-inline: 5px;
-
-    border-bottom: none;
-
-    /*tiempo de transicion pseudoclase*/
+    color: aqua;
     transition: 1s;
-    margin-top: 0.5px;
-
 }
 
-/*al pasar mouse*/
-nav ul li:hover {
+.active:hover {
 
-    background: #4fe8a8;
-    background: radial-gradient(circle, rgb(187, 214, 203) 0%, rgb(223, 177, 202) 79%);
-    border-radius: 10px;
-    padding: 5px;
-    margin: 3px;
+    text-shadow: 30deg;
 }
-
-/*propiedad para clickear*/
-nav ul li:active {
-    background-color: rgb(163, 163, 230);
-
-
-}
-
-nav ul li a {
-    text-decoration: none;
-    text-align: center;
-    /* separacion*/
-
-}
-
-nav ul li a:hover {
-    color: rgb(250, 250, 250);
-}
-
-
 
 body {
 
@@ -412,6 +360,8 @@ main section p {
     grid-template-columns: 2fr 1fr;
 }
 
+
+
 .tituloacordeon h3 {
 
     padding-left: 50px;
@@ -419,6 +369,7 @@ main section p {
 
 .acordeon {
     width: 70%;
+    z-index: 0;
 
 }
 
@@ -589,8 +540,16 @@ footer img {
         flex-direction: column;
 
         row-gap: 20px;
+    }
 
+}
 
+@media screen and (max-width: 920px) {
+    .mapa-acordeon {
+
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
 
     }
 
