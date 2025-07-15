@@ -1,0 +1,19 @@
+{
+  "name": "entrega",
+  "version": "1.0.0",
+  "description": "<h3 align=\"center\">A passionate frontend developer from Chile</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebastian170384/coderhouse-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebastian170384/coderhouse-2/issues"
+  },
+  "homepage": "https://github.com/Sebastian170384/coderhouse-2#readme"
+}
